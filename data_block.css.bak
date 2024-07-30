@@ -1,0 +1,20 @@
+.stk-block p, 
+[data-block-type="core"] p, 
+p[data-block-type="core"], 
+[class*="wp-block-"] p, 
+p[class*="wp-block-"], 
+.ugb-main-block p, 
+.stk-block li, 
+[data-block-type="core"] li:not(.wp-block-post), 
+li[data-block-type="core"], 
+[class*="wp-block-"] li, 
+li[class*="wp-block-"], 
+.ugb-main-block li, 
+.stk-block td, 
+[data-block-type="core"] td, 
+td[data-block-type="core"], 
+[class*="wp-block-"] td, 
+td[class*="wp-block-"], 
+.ugb-main-block td {
+	font-size: 16px;
+}

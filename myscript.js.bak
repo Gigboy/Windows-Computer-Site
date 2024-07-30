@@ -1,0 +1,9 @@
+/* Create an alert button
+on the p onClickEvent 
+*/
+
+$(document.ready(function(){
+	$("button").click(function(){
+		$("p".click();
+	});
+});

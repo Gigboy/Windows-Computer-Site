@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Windows Computer Site</title>
+  </head>
+  
+  <!-- The design/style of the button -->
+  <style>
+  .dropbtn {
+  background-color: rgba(255,255,0);
+  color: black;
+  padding: 18px;
+  font-size: 16px;
+  border: groove, inset;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: rgba(255,0,0);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(255,250,240);
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 1px 1px 0px 0px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  font-size: 16px;
+  padding: 18px 30px;
+  text-decoration: none;
+  display: block;
+}
+
+footer {
+  text-align: center;
+  font-size: 20px;
+  background-color: DarkSalmon;
+  color: black;
+}
+
+/* Hover a button, changes color inside dropdown menu of the navigation links */
+
+.dropdown a:hover {background-color: #f4a460;}
+
+.show {display: inline-block;}
+  </style>
+  
+  <!-- Controls the hovering of the button -->
+  <script>
+  /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+  </script>
+  
+  <!-- CSS File for masthead header -->
+  
+  <link rel="stylesheet" href="scroll.css">
+  <link rel="stylesheet" href="page.css">
+  <link rel="stylesheet" href="vertical_tabs.css">
+  <link rel="stylesheet" href="h1_title.css">
+  <link rel="stylesheet" href="data_block.css">
+
+  <!-- .js file accessed -->
+  <script src="myscript.js"></script>
+
+  <body style="background-color: aqua;">
+    <header id="masthead" class="cf">
+
+<!-- Move the position of the button to the center -->
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
+
+
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Systems</button>
+  <!-- Navigation links inside the dropdown menu -->
+  <div id="myDropdown" class="dropdown-content">
+    <p onclick="alert('This link is unavailable')"><a href="#">Windows 98 Second Edition</p></a>
+
+    <p onclick="alert('This link is unavailable')"><a href="#">Windows XP Professional 32-bit</p></a>
+
+
+    <p onclick="alert('This link is unavailable')"><a href="#">Windows 10 64-bit</p></a>
+  </div>
+</div>
+
+<!-- Adding another page layout for the web browser -->
+<div class="page has-right-rail">
+<br>
+  <main class="page__main" lang="en">
+  
+<!-- Vertical Tabs -->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Windows 98 Second Edition')" id="defaultOpen">Windows 98 Second Edition</button>
+  <button class="tablinks" onclick="openCity(event, 'Windows XP Professional 32-bit')">Windows XP Professional 32-bit</button>
+  <button class="tablinks" onclick="openCity(event, 'Windows 10 64-bit')">Windows 10 64-bit</button>
+</div>
+
+<div id="Windows 98 Second Edition" class="tabcontent">
+  <h3>Windows 98 Second Edition</h3>
+  <br>
+  <p>This system works on older computers.</p>
+</div>
+
+<div id="Windows XP Professional 32-bit" class="tabcontent">
+  <h3>Windows XP Professional 32-bit</h3>
+  <br>
+  <p>This system works on modern computers.</p> 
+</div>
+
+<div id="Windows 10 64-bit" class="tabcontent">
+  <h3>Windows 10 64-bit</h3>
+  <br>
+  <p>This system works on newer computers.</p>
+</div>
+
+<!-- Function of the vertical tabs -->
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+<h1 class="entry-title"> Handling Operating Systems For Windows (PC)</h1>
+
+<p data-block-type="core">
+So far, all the Windows PC is working fundamentally and pysically usable for many versions 
+of many usuable computers. <br>Rather it's old, modern, or newer systems provided for the systems,
+it's still be able to function properly when it comes inserting a physical drive. 
+<br>Working in a physical drives help format the PC normality and the compactbility of any version available.
+</p>
+</div>
+
+<br>
+<br>
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Windows-History.jpg">
+
+<!-- Add some text shadow border for text usage -->
+<div class="page has-right-rail">
+<br>
+  <main class="page__main2" lang="en">
+  <ul>
+  <li>Windows 98 is a continuation of the Windows 95 product. The major change is an insanely heavy focus on web integration. 
+  The help system, many applications, and even the desktop are redesigned to make use of Internet Explorer. Windows 98 runs on top of the same "MS-DOS 7.1" with FAT32 support as Windows 95 OSR2, 
+  and it includes support for USB. Windows 98 had two major releases - a First Edition and a Second Edition. It was followed up by Windows ME.</li>
+  
+  <br>
+  <br>
+  <br>
+  
+  <li>Windows XP is a major release of Microsoft's Windows NT operating system. It was released to manufacturing on August 24, 2001, and later to retail on October 25, 2001. 
+  It is a direct successor to Windows 2000 for high-end and business users and Windows Me for home users.</li>
+  
+  <br>
+  <br>
+  <br>
+  
+  <li>Windows 10 is a major release of Microsoft's Windows NT operating system. It is the direct successor to Windows 8.1, which was released nearly two years earlier. 
+  It was released to manufacturing on July 15, 2015, and later to retail on July 29, 2015.[20] Windows 10 was made available for download via MSDN and TechNet, 
+  as a free upgrade for retail copies of Windows 8 and Windows 8.1 users via the Microsoft Store, and to Windows 7 users via Windows Update.</li>
+  </ul>
+</main>
+</div>
+
+  <footer>
+    <p>Author: Shaan Raval</p>
+  <a href="https://mail.yahoo.com/d/folders/1">Ravalshaan@yahoo.com</a>
+  </footer>
+  
+</body>
+</html>

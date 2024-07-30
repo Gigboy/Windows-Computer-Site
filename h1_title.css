@@ -1,0 +1,29 @@
+body.single-post .site-content .entry-header-wrapper .entry-title {
+	order: 2;
+}
+
+body.single.single-post .entry-header-wrapper .entry-title {
+	font-size: 40px;
+}
+
+h1,
+.entry-title,
+.post-type-archive-jetpack-testimonial .page-title {
+	font-weight: normal;
+	letter-spacing: -.015em;
+}
+
+/* 
+Letter spacing for <h1> element tag,
+font-family style 
+*/
+
+@media screen and (min-width: 768px) {
+h1,
+.entry-title,
+.post-type-archive-jetpack-testimonial .page-title {
+	line-height: 4.2245; 
+	font-family: Verdana, sans-serif;
+}
+}
+
